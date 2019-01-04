@@ -33,7 +33,7 @@ Errors Encounters
 * -- Server Xampp or Wamp don't work ? 
 > Check your antivirus is disable during the installation part 
 
-* Run as Administrator
+* -- Run as Administrator
 
 * -- Database doesn't exist ? Create new database if needed
 
