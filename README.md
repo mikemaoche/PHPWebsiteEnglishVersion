@@ -31,8 +31,9 @@ Errors Encounters
 > File Location: tool/script-tables.sql
 
 * -- Server Xampp or Wamp don't work ? 
-> Check your antivirus is disable during the installation part
-> Run as Administrator
+> Check your antivirus is disable during the installation part 
+
+* Run as Administrator
 
 * -- Database doesn't exist ? Create new database if needed
 
