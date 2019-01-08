@@ -37,6 +37,9 @@ Errors Encounters
 
 * -- Database doesn't exist ? Create new database if needed
 
+Status
+* Done !
+
 Any Questions, feel free to ask me !
 Cheers,
 Mike
