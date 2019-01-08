@@ -1,6 +1,6 @@
 # PHPWebsiteEnglishVersion
 
-Welcome to this project !
+Welcome to this project ! Made from scratch & no templates used
 
 Let's make a quick introduction on how to setup the project on your desktop:
 
