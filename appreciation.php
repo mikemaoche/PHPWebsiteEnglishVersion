@@ -16,25 +16,25 @@
 			?>		<div class="unFrameEvaluer">
 						<h1><?=$item["titre"]?></h1>
 						<?=$item["url"]?>
-						<p>Publié le : <?=$item["datant"]?></p>
+						<p>Published the : <?=$item["datant"]?></p>
 						<p>Score : <?=$_GET["score"]?></p>
 						<div class="commentaire">
 							<form method="POST">
 					           <textarea name="editor1" id="editor1">
 					           </textarea>
 					           <div class="sousCommentaire">
-									<span>NOTER </span><input name="note" type="number" min="1" max="10">
-									<input name="commenter" type="submit" value="commenter" />
+									<span>Rate between (?/10)</span><input name="note" type="number" min="1" max="10">
+									<input name="commenter" type="submit" value="Send" />
 								</div>					  
 					   		</form>
 				   			<div id="message" class="messages">
-				   				<h3>Commentary session : <?=$_GET["videoTitre"]?></h3>
+				   				<h3>Comments Section: <?=$_GET["videoTitre"]?></h3>
 								<?php 
 									$list = $apprecie->afficherCommentaires();
 						  			foreach($list as $key => $item){
 								?>
 									<div>
-										<b><?php echo $apprecie->trouverUsager($item["usagersID"]) ?> a publié le : <?=$item["datant"]?></b>
+										<b><?php echo $apprecie->trouverUsager($item["usagersID"]) ?> commented the : <?=$item["datant"]?></b>
 										<?=$item["commentaire"]?>
 									</div>
 								<?php

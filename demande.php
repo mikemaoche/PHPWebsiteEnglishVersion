@@ -17,7 +17,7 @@
 		</form>
 	</div>
 	<div class="cadreAfficherDemande">
-		<h3>Table of pending requests</h3>
+		<h3>Pending requests</h3>
 		<p>Title</p>
 		<p>Language</p>
 		<p>Member</p>

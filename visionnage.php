@@ -11,10 +11,10 @@
 	<div class="cadreVideo">
 		<div class="barreRecherche">
 			<button id="idBtnFilter" type="button"><img src="./images/filter.png" alt="home" /></button>
-			<input id="idSearchBar" type="search" placeholder="Recherchez ..."></input>
+			<input id="idSearchBar" type="search" placeholder="Search ..."></input>
 		</div>
 		<div id="resultat" style="width:60%;margin:auto;outline:1px solid rgba(255,0,255,0.6);text-align:center;" >
-			<h3>Affichage des vidéos trouvées</h3>
+			<h3>Videos Available</h3>
 		</div>
 		<div class="cadreIFrames">
 
@@ -64,14 +64,14 @@
 						}
 					}).done(function(reponse){
 						reponse = JSON.parse(reponse)
-						entete = "<h3>Affichage des vidéos trouvées</h3>"
+						entete = "<h3>Videos Founded</h3>"
 						if($("#idSearchBar").val().length > 0){
 							for(var i = 0 ; i < reponse.length ; i++){
 								console.log(reponse[i]["titre"])
 								
 								titre = "<p>" + reponse[i]["titre"] + "</p>"
 								video = reponse[i]["url"]
-								date = "<p>Publié le : " + reponse[i]["datant"] + "</p>"
+								date = "<p>Published the: " + reponse[i]["datant"] + "</p>"
 								resultat += entete + titre + video + date
 								
 							}

@@ -36,7 +36,7 @@ if(!empty($_POST["password1"]) === !empty($_POST["password2"]))
 {
 	if(filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 	    //L'email est bonne
-		$candidat->inscrire(htmlspecialchars($_POST["nom"],ENT_QUOTES),htmlspecialchars($_POST["email"],ENT_QUOTES),htmlspecialchars($_POST["password1"],ENT_QUOTES),htmlspecialchars($_POST["password2"],ENT_QUOTES));
+		$candidat->inscrire(htmlspecialchars($_POST["name"],ENT_QUOTES),htmlspecialchars($_POST["email"],ENT_QUOTES),htmlspecialchars($_POST["password1"],ENT_QUOTES),htmlspecialchars($_POST["password2"],ENT_QUOTES));
 		$mdpEncrypte= password_hash($candidat->getData()[2],PASSWORD_DEFAULT); /* bcrypt */
 		$db->submitSomeone($candidat->getData()[0],$candidat->getData()[1],$mdpEncrypte);
 		?>

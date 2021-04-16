@@ -14,4 +14,6 @@
 </div><div class='sousAnnonce'><p>Hi everyone</p>
 </div><div class='sousAnnonce'><p>New Message 2018</p>
 </div><div class='sousAnnonce'><p>test</p>
+</div><div class='sousAnnonce'><p>Awesome Daniel ! he saw it</p>
+</div><div class='sousAnnonce'><p>Finally, the latest&nbsp;release for this website! Theme color change, buttons polished, menu redesigned, background image added, header modified</p>
 </div>

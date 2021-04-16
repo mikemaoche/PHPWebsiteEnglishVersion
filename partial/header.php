@@ -37,13 +37,12 @@
 <div class="entete">
 	<header>
 		<h1>MyTvChannel</h1>
-		<div class="cadreLogge">
-			<a href="session-client.php"><img alt="imgClient" src=<?php 
+		<div class="containerLogin">
+			<a title="user profile" href="session-client.php"><img alt="imgClient" src=<?php 
 			$img = !empty($_SESSION["photoProfil"]) ? $_SESSION["photoProfil"] : '';
 			echo  $img ?>></a>
 			<div class="logout">
-				<a href="session-client.php"><?=$_SESSION['login']?></a>
-				<a title="déconnexion" href="index.php?etatConnexion=0&action=true"><img alt="imgLogout" src="images/logout.png"></a>
+				<a title="logout" href="index.php?etatConnexion=0&action=true"><img alt="imgLogout" src="images/logout.png"></a>
 			</div>
 		</div>
 	</header>
@@ -78,13 +77,12 @@
 	<div class="entete">
 			<header>
 				<h1>MyTvChannel</h1>
-				<div class="cadreLogge">
-					<a href="session-admin.php"><img alt="imgClient" src=<?php 
+				<div class="containerLogin">
+					<a title="admin profile" href="session-admin.php"><img alt="imgClient" src=<?php 
 					$img = !empty($_SESSION["photoProfil"]) ? $_SESSION["photoProfil"] : "aucun";
 					echo  $img ?>></a>
 					<div class="logout">
-						<a href="session-admin.php"><?=$_SESSION['login']?></a>
-						<a title="déconnexion" href="index.php?etatConnexion=0&action=true"><img alt="imgLogout" src="images/logout.png"></a>
+						<a title="logout" href="index.php?etatConnexion=0&action=true"><img alt="imgLogout" src="images/logout.png"></a>
 					</div>
 				</div>
 			</header>
